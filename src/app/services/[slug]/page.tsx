@@ -51,7 +51,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           <section className="bg-white py-20 text-slate-950 md:py-28">
             <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-2xl">
-                <Image src="/struggling.jfif" alt="Teams navigating SAP delivery challenges" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+                <Image src="/struggling.jpg" alt="Teams navigating SAP delivery challenges" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
               </div>
               <div>
                 <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-brand">01 / The starting point</p>
@@ -74,13 +74,13 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   {service.capabilities.map((capability) => <div key={capability} className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm leading-relaxed text-slate-200">{capability}</div>)}
                 </div>
               </div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl"><Image src="/sap.jfif" alt="SAP enterprise technology and delivery" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" /></div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl"><Image src="/sap.jpg" alt="SAP enterprise technology and delivery" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" /></div>
             </div>
           </section>
 
           <section className="bg-white py-20 text-slate-950 md:py-28">
             <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-2xl"><Image src="/rytcandiadte.jfif" alt="SAP consultant ready for an engagement" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" /></div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-2xl"><Image src="/rytcandiadte.jpg" alt="SAP consultant ready for an engagement" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" /></div>
               <div>
                 <p className="mb-4 text-sm font-bold uppercase tracking-[0.24em] text-brand">03 / The confidence to move</p>
                 <h2 className="max-w-2xl text-3xl font-bold leading-tight md:text-5xl">A shortlist built for a decision, not just a download.</h2>
