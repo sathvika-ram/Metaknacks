@@ -44,7 +44,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex h-16 items-center justify-between sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer relative group">
             <div className="absolute inset-0 bg-brand/20 blur-xl rounded-full group-hover:bg-brand/40 transition-all duration-300"></div>
@@ -53,9 +53,9 @@ export default function Navbar() {
               alt="METAKNACKS logo"
               width={42}
               height={42}
-              className="relative z-10 h-10 w-10 object-contain"
+              className="relative z-10 h-9 w-9 object-contain sm:h-10 sm:w-10"
             />
-            <div className="text-2xl font-bold bg-brand-gradient bg-clip-text text-transparent relative z-10">
+            <div className="relative z-10 text-lg font-bold bg-brand-gradient bg-clip-text text-transparent sm:text-2xl">
               METAKNACKS
             </div>
           </Link>

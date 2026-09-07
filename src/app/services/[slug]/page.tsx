@@ -25,7 +25,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <section className="relative overflow-hidden border-b border-border pt-32 pb-20">
+      <section className="relative overflow-hidden border-b border-border pb-16 pt-28 sm:pb-20 sm:pt-32">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(140,82,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(140,82,255,0.06)_1px,transparent_1px)] bg-[size:44px_44px]" />
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div>
@@ -33,9 +33,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
               <span aria-hidden="true">←</span> Back to services
             </Link>
             <p className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-secondary">{service.eyebrow}</p>
-            <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">{service.title}</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">{service.summary}</p>
-            <Link href="/about#contact" className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-gradient px-7 py-3.5 font-semibold text-white shadow-glow transition-transform hover:-translate-y-1">
+            <h1 className="max-w-3xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">{service.title}</h1>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg md:text-xl">{service.summary}</p>
+            <Link href="/about#contact" className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-gradient px-7 py-3.5 font-semibold text-white shadow-glow transition-transform hover:-translate-y-1 sm:w-auto">
               Talk to our team <ArrowRight size={18} />
             </Link>
           </div>

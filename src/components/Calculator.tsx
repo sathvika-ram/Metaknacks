@@ -34,8 +34,8 @@ export default function Calculator() {
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Plan your SAP capability with a trusted delivery partner</h2>
-          <p className="text-muted text-lg">
+            <h2 className="mb-4 text-3xl font-bold md:text-5xl">Plan your SAP capability with a trusted delivery partner</h2>
+          <p className="text-base text-muted sm:text-lg">
             Share your priorities with us. We will clarify the brief, align the right SAP expertise, and come back with a practical next step.
           </p>
         </div>
@@ -120,14 +120,14 @@ export default function Calculator() {
             </div>
 
             {/* Submit */}
-            <div className="pt-4 flex items-center justify-between border-t border-border">
-              <div className="text-sm text-muted">
+            <div className="flex flex-col items-stretch justify-between gap-5 border-t border-border pt-4 sm:flex-row sm:items-center">
+              <div className="text-sm text-muted sm:max-w-[55%]">
                 {selectedModules.length} module(s) • {selectedSeniority} • {selectedModel}
               </div>
               <button
                 type="submit"
                 disabled={selectedModules.length === 0 || isSubmitted}
-                className={`flex items-center gap-2 px-8 py-3 rounded-full font-bold transition-all duration-300 ${
+                className={`flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 font-bold transition-all duration-300 sm:w-auto sm:px-8 ${
                   selectedModules.length === 0
                     ? "bg-muted/20 text-muted cursor-not-allowed"
                     : isSubmitted

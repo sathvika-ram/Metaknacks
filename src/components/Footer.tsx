@@ -78,11 +78,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-8 text-center md:flex-row md:text-left">
           <div className="text-sm text-slate-500">
                 &copy; {new Date().getFullYear()} METAKNACKS. All rights reserved.
           </div>
-          <div className="flex gap-6 text-sm text-slate-500">
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-slate-500 md:justify-end">
             <a href="#" className="transition-colors hover:text-brand">Privacy Policy</a>
             <a href="#" className="transition-colors hover:text-brand">Terms of Service</a>
             <a href="#" className="transition-colors hover:text-brand">GDPR</a>

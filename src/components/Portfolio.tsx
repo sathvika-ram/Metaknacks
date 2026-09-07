@@ -10,6 +10,7 @@ const clients = [
   { name: "Rebel Foods", logo: "/rebel.jpg" },
   { name: "Hamswell", logo: "/hamswell.png" },
   { name: "Intellect Bizware", logo: "/inteelect.jpg" },
+  { name: "Manimeta", logo: "/manimeta.png" },
 ];
 
 export default function Portfolio() {
@@ -37,9 +38,9 @@ export default function Portfolio() {
             </p>
           </motion.div>
 
-          <div className="flex gap-8 border-l border-border pl-6">
+          <div className="flex gap-8 border-t border-border pt-5 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0">
             <div>
-              <div className="text-2xl font-bold text-foreground">06</div>
+              <div className="text-2xl font-bold text-foreground">07</div>
               <div className="text-xs text-muted uppercase tracking-wider mt-1">Partner brands</div>
             </div>
             <div>
