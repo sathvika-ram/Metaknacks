@@ -53,6 +53,8 @@ export default function Navbar() {
               alt="METAKNACKS logo"
               width={42}
               height={42}
+              priority
+              sizes="(max-width: 640px) 36px, 40px"
               className="relative z-10 h-9 w-9 object-contain sm:h-10 sm:w-10"
             />
             <div className="relative z-10 text-lg font-bold bg-brand-gradient bg-clip-text text-transparent sm:text-2xl">
@@ -102,6 +104,9 @@ export default function Navbar() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="text-foreground hover:text-brand p-2"
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -116,6 +121,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
+            id="mobile-navigation"
             className="md:hidden bg-card border-b border-border overflow-hidden"
           >
             <div className="px-4 pt-2 pb-6 space-y-1">

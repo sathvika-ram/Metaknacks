@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { getService, services } from "@/lib/services";
@@ -9,6 +10,23 @@ import { getService, services } from "@/lib/services";
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = getService(slug);
+
+  if (!service) {
+    return {};
+  }
+
+  return {
+    title: service.title,
+    description: service.summary,
+    alternates: {
+      canonical: `/services/${service.slug}`,
+    },
+  };
+}
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
