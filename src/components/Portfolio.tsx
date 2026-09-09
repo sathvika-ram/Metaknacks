@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 const clients = [
   { name: "Apar Industries", logo: "/apal.png" },
@@ -10,7 +11,6 @@ const clients = [
   { name: "Rebel Foods", logo: "/rebel.jpg" },
   { name: "Hamswell", logo: "/hamswell.png" },
   { name: "Intellect Bizware", logo: "/inteelect.jpg" },
-  { name: "Manimeta", logo: "/manimeta.png" },
 ];
 
 export default function Portfolio() {
@@ -40,8 +40,8 @@ export default function Portfolio() {
 
           <div className="flex gap-8 border-t border-border pt-5 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0">
             <div>
-              <div className="text-2xl font-bold text-foreground">07</div>
-              <div className="text-xs text-muted uppercase tracking-wider mt-1">Partner brands</div>
+              <div className="text-2xl font-bold text-foreground">06</div>
+              <div className="text-xs text-muted uppercase tracking-wider mt-1">Client brands</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-foreground">100%</div>
@@ -68,6 +68,48 @@ export default function Portfolio() {
               <span className="text-[10px] font-bold tracking-[0.15em] text-black uppercase">{client.name}</span>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <div className="relative overflow-hidden rounded-2xl border border-brand/25 bg-brand-gradient-soft p-6 md:p-8">
+          <div className="absolute right-0 top-0 h-full w-1/3 bg-brand/5 [clip-path:polygon(35%_0,100%_0,100%_100%,0_100%)]" />
+          <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="flex items-center gap-5">
+              <div className="flex h-16 w-24 shrink-0 items-center justify-center rounded-xl bg-white px-3 shadow-sm">
+                <Image
+                  src="/manimeta.png"
+                  alt="ManiMeta Technologies logo"
+                  width={120}
+                  height={64}
+                  className="h-12 w-20 object-contain"
+                />
+              </div>
+              <div>
+                <div className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-brand">MetaKnacks affiliated entity</div>
+                <h3 className="text-xl font-bold text-foreground md:text-2xl">ManiMeta Technologies Pte. Ltd.</h3>
+                <p className="mt-1 text-sm text-muted">Singapore | SAP, cloud integration, and enterprise transformation</p>
+              </div>
+            </div>
+            <div className="relative flex shrink-0 flex-wrap gap-3">
+              <a
+                href="https://manimeta.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+              >
+                Visit ManiMeta <ArrowUpRight size={16} aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7503422500341714945"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-brand/30 bg-white/70 px-4 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-white"
+              >
+                LinkedIn <ArrowUpRight size={16} aria-hidden="true" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       
